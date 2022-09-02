@@ -12,8 +12,8 @@ html, body{
 }
 
 .container{
-    width: calc(100vw / 2);
-    height: 100vh;
+    width: calc(60vw / 2);
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,7 @@ html, body{
     border: dashed #abcdef;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 .flexElements{
@@ -30,9 +31,11 @@ html, body{
     flex-direction: column;
     /* justify-content: space-between; */
     margin: 1%; 
+    
 }
 
 .inputPrecent{
+    
     width: 95px;
     height: 50px;
     border-radius: 40px;
