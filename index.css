@@ -12,30 +12,32 @@ html, body{
 }
 
 .container{
-    width: calc(200vw / 2);
-    height: 100vh;
+    min-width: calc(100vw / 2);
+    max-width: calc(200vw / 2);;
+    /* width: 100vh; */
+    /* min-height: 100vh; */
+    max-height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-between; */
-    /* flex-direction: column; */
     border: dashed #abcdef;
     flex-direction: column;
     flex-wrap: wrap;
+
     
 }
 
 .flexElements{
-    min-height: 40%;
+    max-height: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin: 1%; 
-    
+    justify-content:space-between;
+    /* align-items: center; */
+   
 }
 
 .inputPrecent{
-    
     width: 95px;
     height: 50px;
     border-radius: 40px;
@@ -59,18 +61,18 @@ html, body{
 .circkeHidden{
     visibility: hidden;
 }
-
+    
 .animateCircle{
     transform-origin: center;
     transform: rotate(-90deg);
     animation: active_circke 1.7s ease-in-out 0.3s forwards;
-    stroke-dasharray: 622.0353454107791;
-    stroke-dashoffset: 622.0353454107791;
+    stroke-dasharray: 747.6990515543707;
+    stroke-dashoffset: 747.6990515543707;
     animation-iteration-count: infinite;
 }
 @keyframes active_circke {
     100% {
-        stroke-dashoffset: -622.0353454107791;
+        stroke-dashoffset: -747.6990515543707;
     }
    
 }
