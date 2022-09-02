@@ -13,10 +13,10 @@ html, body{
 
 .container{
     min-width: calc(100vw / 2);
-    max-width: calc(200vw / 2);;
+/*     max-width: calc(200vw / 2);; */
     /* width: 100vh; */
     /* min-height: 100vh; */
-    max-height: 90%;
+   min-height: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
