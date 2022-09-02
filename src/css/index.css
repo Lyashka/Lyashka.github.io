@@ -1,0 +1,117 @@
+html, body{
+    background-color:aliceblue;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: calc(100vw / 2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    border: dashed #abcdef;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flexElements{
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 1%; 
+}
+
+.inputPrecent{
+    width: 95px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 30px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.proressBackground{
+   transform-origin: center;
+   position: absolute;
+}
+
+.progress_circle{
+   visibility: visible;
+   position: absolute;
+   transform-origin: center;
+   transform: rotate(-90deg);
+   transition: stroke-dashoffset 0.3s;
+}
+.circkeHidden{
+    visibility: hidden;
+}
+
+.animateCircle{
+    transform-origin: center;
+    transform: rotate(-90deg);
+    animation: active_circke 1.7s ease-in-out 0.3s forwards;
+    stroke-dasharray: 622.0353454107791;
+    stroke-dashoffset: 622.0353454107791;
+    animation-iteration-count: infinite;
+}
+@keyframes active_circke {
+    100% {
+        stroke-dashoffset: -622.0353454107791;
+    }
+   
+}
+
+
+.toggle-button{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    margin-bottom: 3%;
+    vertical-align: top;
+    background: #ffffff;
+    border: 1px solid #bbc1e1;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s;
+}
+.toggle-button::after {
+    content: "";
+  
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+  
+    width: 45px;
+    height: 45px;
+    background-color: blue;
+    border-radius: 50%;
+  
+    transform: translateX(0);
+    transition: all 0.3s;
+  }
+  .toggle-button:checked::after {
+    transform: translateX(calc(100% + 3px));
+    background-color: #fff;  
+  }
+  .toggle-button:checked {
+    background-color: blue;
+  }
+

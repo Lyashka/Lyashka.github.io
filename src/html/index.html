@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flexProgressBar">
+            <!-- <svg class="proressBackground" width="230" height="230">
+                <circle class="proressBackground" stroke="#fff" stroke-width="10" cx="110" cy="110" r="99" fill="transparent"/>
+            </svg> -->
+            <svg class="proress" width="230" height="230">
+                <circle class="progressBackground" stroke="#e9e9e9" stroke-width="9" cx="110" cy="120" r="99" fill="transparent"/>
+
+                <circle class="progress_circle" stroke="#005bff" stroke-width="10" cx="110" cy="110" r="99" fill="transparent"/>
+            </svg>
+            <!-- radius = (width / 2) - (stroke-width * 2) 52 -->
+        </div> 
+        
+        <div class="flexElements">
+            <div>
+                <input type="text" class="inputPrecent" oninput="changeHandler(this)" />
+                <label>Value</label>
+            </div>
+            <div>
+                <input type="checkbox" id="toggle-button-animate" class="toggle-button">
+                <label>Animate</label>
+            </div>
+            <div>
+                <input type="checkbox" id="toggle-button-hidden" class="toggle-button">
+                <label>Hide</label>
+            </div>
+        </div>
+    </div>  
+    
+
+
+    <script src="/src/js/index.js"></script>
+</body>
+</html>
