@@ -39,7 +39,7 @@ toggleButtonAnimate.addEventListener('click', () => {
         circle.classList.add('animateCircle')
         document.querySelector('.inputPrecent').disabled = true
         document.querySelector('.inputPrecent').value = ''
-        circle.style.strokeDashoffset = 622.0353454107791
+        circle.style.strokeDashoffset = 747.6990515543707
         
     }
     else{
