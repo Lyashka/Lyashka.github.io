@@ -12,7 +12,7 @@ html, body{
 }
 
 .container{
-    width: calc(60vw / 2);
+    width: calc(80vw / 2);
     height: 60vh;
     display: flex;
     justify-content: center;
