@@ -2,9 +2,7 @@
 
 const circle = document.querySelector('.progress_circle');
 const radius = circle.r.baseVal.value; //берем значение радиуса у элемента progress
-console.log(radius)
 const circumference = 2 * Math.PI * radius //длина окружности
-console.log(circumference)
 const inputPrecent = document.querySelector('.inputPrecent')
 const toggleButtonAnimate = document.querySelector('#toggle-button-animate') 
 const toggleButtonHidden = document.querySelector('#toggle-button-hidden')
@@ -24,7 +22,6 @@ const changeHandler = (e) => {
 }
 
 
-
 circle.style.strokeDasharray = `${circumference} ${circumference}`
 circle.style.strokeDashoffset = circumference
 
@@ -34,19 +31,20 @@ function setProgress(percent) {
     circle.style.strokeDashoffset = offset;
 }
 
+
 toggleButtonAnimate.addEventListener('click', () => {
     if(!circle.classList.contains('animateCircle')){
         circle.classList.add('animateCircle')
         document.querySelector('.inputPrecent').disabled = true
         document.querySelector('.inputPrecent').value = ''
         circle.style.strokeDashoffset = 747.6990515543707
-        
     }
     else{
         circle.classList.remove('animateCircle')
         document.querySelector('.inputPrecent').disabled = false
     }
 })
+
 
 toggleButtonHidden.addEventListener('click', () => {
     if(!circle.classList.contains('circkeHidden')){
