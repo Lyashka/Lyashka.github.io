@@ -71,6 +71,18 @@ html, body{
     }
 }
 
+.nameToggleBtn{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lblFont{
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
 
 /* toggle button */
 .toggle-button{
