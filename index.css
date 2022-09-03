@@ -60,14 +60,14 @@ html, body{
     transform-origin: center;
     transform: rotate(-90deg);
     animation: active_circke 1.7s ease-in-out 0.3s forwards;
-    stroke-dasharray: 747.6990515543707;
-    stroke-dashoffset: 747.6990515543707;
+    stroke-dasharray: 753.9822368615503;
+    stroke-dashoffset: 753.9822368615503;
     animation-iteration-count: infinite;
 }
 
 @keyframes active_circke {
     100% {
-        stroke-dashoffset: -747.6990515543707;
+        stroke-dashoffset: -753.9822368615503;
     }
 }
 
