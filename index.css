@@ -13,9 +13,6 @@ html, body{
 
 .container{
     min-width: calc(100vw / 2);
-    /* max-width: calc(200vw / 2);; */
-    /* width: 100vh; */
-    /* min-height: 100vh; */
     min-height: 55%;
     display: flex;
     justify-content: center;
@@ -23,8 +20,6 @@ html, body{
     border: dashed #abcdef;
     flex-direction: column;
     flex-wrap: wrap;
-
-    
 }
 
 .flexElements{
@@ -33,8 +28,6 @@ html, body{
     flex-direction: column;
     margin: 3%; 
     justify-content:space-between;
-    /* align-items: center; */
-   
 }
 
 .inputPrecent{
@@ -58,6 +51,7 @@ html, body{
    transform: rotate(-90deg);
    transition: stroke-dashoffset 0.3s;
 }
+
 .circkeHidden{
     visibility: hidden;
 }
@@ -70,14 +64,15 @@ html, body{
     stroke-dashoffset: 747.6990515543707;
     animation-iteration-count: infinite;
 }
+
 @keyframes active_circke {
     100% {
         stroke-dashoffset: -747.6990515543707;
     }
-   
 }
 
 
+/* toggle button */
 .toggle-button{
     position: relative;
     display: inline-block;
